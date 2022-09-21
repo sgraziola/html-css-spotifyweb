@@ -15,7 +15,19 @@
     --spotify_accent: #ADFF2F;
     --spotify_lightest: #FFFFFF;
 }
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /* #endregion Common */
+
+/* #region Utilities */
+.d_flex{
+    display: flex;
+}
+/* #endregion Utilities */
 
 /* #region Wrapper */
     .wrapper{
@@ -25,6 +37,33 @@
         background-color: var(--spotify_darkest);
         width: 230px;
         height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        color: var(--spotify_light_extra);
+    }
+    .sidebar_top{
+        padding: 1rem;
+    }
+    .logo,
+    nav{
+        padding-bottom: 1.5rem;
+    }
+    svg.spotify-logo--text {
+        width: 130px;
+    }
+    nav div{
+        padding: 0.3rem 0;
+    }
+    nav svg{
+        width: 25px;
+        vertical-align: middle;
+    }
+
+    .home{
+        color: var(--spotify_lightest);
+    }
+    .playlist ul{
+        list-style-type: none;
     }
 /* #endregion Wrapper */
 
@@ -40,6 +79,12 @@
 /* region Debug */
 .debug .wrapper{
     background-color: lightcoral;
+}
+.debug .sidebar_top,
+.debug .sidebar_bot{
+    border: 1px solid red;
+    height: 200px;
+    width: 100%;
 }
 
 /* endregion Debug */
