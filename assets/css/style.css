@@ -78,6 +78,12 @@ nav svg {
     color: var(--spotify_lightest);
 }
 
+.home {
+    border-left: 5px solid var(--spotify_accent);
+    margin-left: -16px;
+    padding-left: 11px;
+}
+
 .playlist h2 {
     font-weight: 800;
     font-size: 13px;
@@ -137,13 +143,14 @@ nav svg {
     height: 20px;
     margin-right: 0.5rem;
 }
-.banner{
+
+.banner {
     background-color: var(--spotify_dark_extra);
     padding: 1rem 2rem;
     text-align: end;
 }
 
-.banner a{
+.banner a {
     text-decoration: none;
     color: var(--spotify_lightest);
     padding: 1rem 5rem;
@@ -151,37 +158,95 @@ nav svg {
     border-radius: 3rem;
     display: inline-block;
 }
-.container_lg{
+
+.container_lg {
     flex-grow: 1;
     font-size: 13px;
     font-weight: 800;
 }
-.container{
+
+.inside_wrapper {
     overflow: auto;
     background-color: var(--spotify_darker);
 }
-.headbar{
+
+.headbar {
     text-align: center;
     margin-top: -1rem;
     margin-bottom: 1rem;
 }
-.headbar a{
+
+.headbar a {
     text-decoration: none;
     color: var(--spotify_light);
     padding-right: 1rem;
     display: inline-block;
     margin-top: 2rem;
 }
-.headbar .clicked{
+
+.headbar .clicked {
     position: relative;
 }
-.headbar .clicked::before{
+
+.headbar .clicked::before {
     content: "";
     position: absolute;
     left: 29px;
     top: 19px;
     border-bottom: 2px solid var(--spotify_accent);
     width: 30%;
+}
+
+.music_section {
+    overflow: auto;
+    height: calc(100vh - 220px);
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.music_section section {
+    padding: 1rem;
+    color: var(--spotify_lightest);
+}
+
+.music_section h2 {
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    margin-bottom: 2rem;
+}
+
+.music_section h3 {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.music_section h5 {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.04em;
+    color: var(--spotify_light);
+}
+
+.card{
+    text-align: center;
+}
+
+.col-2 {
+    width: calc(100% /12 *2);
 }
 
 /* #endregion Wrapper */
@@ -205,6 +270,12 @@ nav svg {
     border: 1px solid red;
     height: 200px;
     width: 100%;
+}
+
+.debug.col-4 {
+    background-color: #ADFF2F;
+    border: 1px solid red;
+    height: 100px;
 }
 
 /* endregion Debug */
