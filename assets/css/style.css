@@ -150,19 +150,40 @@ nav svg {
     border: 1px solid var(--spotify_lightest);
     border-radius: 3rem;
     display: inline-block;
-    font-size: 13px;
-    font-weight: 800;
 }
 .container_lg{
     flex-grow: 1;
+    font-size: 13px;
+    font-weight: 800;
 }
-
-
 .container{
-    width: 90%;
-    margin: auto;
     overflow: auto;
+    background-color: var(--spotify_darker);
 }
+.headbar{
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+.headbar a{
+    text-decoration: none;
+    color: var(--spotify_light);
+    padding-right: 1rem;
+    display: inline-block;
+    margin-top: 2rem;
+}
+.headbar .clicked{
+    position: relative;
+}
+.headbar .clicked::before{
+    content: "";
+    position: absolute;
+    left: 29px;
+    top: 19px;
+    border-bottom: 2px solid var(--spotify_accent);
+    width: 30%;
+}
+
 /* #endregion Wrapper */
 
 /* #region playerbar */
