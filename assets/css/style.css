@@ -16,7 +16,8 @@
     --spotify_accent: #ADFF2F;
     --spotify_lightest: #FFFFFF;
     --spotify_medium_light:#878787;
-
+    --spotify_bar_complete: #5A5A5A;
+    --spotify_bar_in_progress: #C1C1C1;
 }
 
 img {
@@ -356,12 +357,17 @@ nav svg {
     letter-spacing: -0.045em;
 }
 
-.name{
-    color: var(--spotify_medium_light);
+.name,
+.time_left,
+.time_right{
     font-weight: 700;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: -0.025em;
+}
+
+.name{
+    color: var(--spotify_medium_light);
 }
 
 .author:hover,
@@ -388,11 +394,43 @@ nav svg {
     padding-right: 0.75rem;
 }
 
+.controls{
+    color: var(--spotify_lightest);
+    text-align: center;
+}
+.controls_icons i{
+    padding: 0 0.5rem;
+}
+.controls_icons .fa-circle-play{
+    font-size: 30px;
+    vertical-align: middle;
+}
+.controls_bar{
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.controls_bar .bar{
+    width: 400px;
+    height: 4px;
+    border-radius: 2rem;
+    background-color: var(--spotify_bar_complete);
+    margin: 0 2rem;
+}
+
+.bar .bar_in_progress{
+    width: 20%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: var(--spotify_bar_in_progress) ;
+}
+
 
 /* #endregion playerbar */
 
 
-/* region Debug */
+/* #region Debug */
 .debug .wrapper {
     background-color: lightcoral;
 }
@@ -410,4 +448,4 @@ nav svg {
     height: 100px;
 }
 
-/* endregion Debug */
+/* #endregion Debug */
