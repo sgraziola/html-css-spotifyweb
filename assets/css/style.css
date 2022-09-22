@@ -515,3 +515,21 @@ nav svg {
 }
 
 /* #endregion Debug */
+
+/* #region Responsive Media Queries */
+/* @media screen and (max-width: 1439px) {
+   
+} */
+
+@media screen and (max-width: 879px) {
+   
+}
+
+@media screen and (max-width: 640px) {
+   
+}
+
+@media screen and (max-width: 553px) {
+   
+}
+/* #endregion Responsive Media Queries */
