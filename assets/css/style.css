@@ -394,7 +394,8 @@ nav svg {
     padding-right: 0.75rem;
 }
 
-.controls{
+.controls,
+.audio{
     color: var(--spotify_lightest);
     text-align: center;
 }
@@ -413,10 +414,13 @@ nav svg {
 
 .controls_bar .bar{
     width: 400px;
+    margin: 0 2rem;
+}
+
+.playerbar .bar{
     height: 4px;
     border-radius: 2rem;
     background-color: var(--spotify_bar_complete);
-    margin: 0 2rem;
 }
 
 .bar .bar_in_progress{
@@ -426,6 +430,27 @@ nav svg {
     background-color: var(--spotify_bar_in_progress) ;
 }
 
+.fa-display {
+    padding: 0 1rem;
+}
+.fa-ellipsis-vertical {
+    margin-right: -4px;
+}
+
+.settings:hover,
+.audio .fa-solid{
+    cursor: pointer;
+}
+
+.audio .bar{
+    width: 150px;
+    margin-left: 1rem;
+}
+
+.audio_icons {
+    justify-content: end;
+    align-items: center;
+}
 
 /* #endregion playerbar */
 
