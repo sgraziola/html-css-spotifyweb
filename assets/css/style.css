@@ -53,6 +53,11 @@ body {
 .sidebar_top,
 .sidebar_bot {
     padding: 1rem;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: var(--spotify_light_extra);
     font-weight: 700;
     font-size: 13px;
 }
@@ -85,13 +90,16 @@ nav svg {
     margin-left: -16px;
     padding-left: 11px;
 }
+.home a{
+    color: var(--spotify_lightest);
+}
 
 .playlist h2 {
     font-weight: 800;
     font-size: 13px;
 }
 
-.new_playlist {
+.new_playlist a{
     font-weight: 800;
     font-size: 14px;
 }
@@ -109,9 +117,10 @@ nav svg {
     padding-bottom: 0.6rem;
 }
 
-.fa-square-plus {
+.add_playlist i{
     vertical-align: middle;
     font-size: 40px;
+    padding-right: 0.5rem;
 }
 
 .install {
@@ -146,23 +155,32 @@ nav svg {
     margin-right: 0.5rem;
 }
 
+.sidebar a:hover,
+.headbar a:hover {
+    color: var(--spotify_lightest);
+}
+
 .banner {
     background-color: var(--spotify_dark_extra);
     padding: 1rem 2rem;
     text-align: end;
     position: fixed;
-    width: calc(100vw - 280px);
+    width: calc(100vw - 287px);
     top: 0;
-    right: 10px;
+    right: 17px;
 }
 
 .banner a {
     text-decoration: none;
     color: var(--spotify_lightest);
-    padding: 1rem 5rem;
+    padding: 0.75rem 3rem;
     border: 1px solid var(--spotify_lightest);
     border-radius: 3rem;
     display: inline-block;
+}
+
+.banner a:hover{
+    transform: scale(1.1);
 }
 
 .container_lg {
@@ -244,13 +262,37 @@ nav svg {
     color: var(--spotify_light);
 }
 
+.col-2 {
+    width: calc(100% /12 *2);
+}
+
 .card{
     text-align: center;
     padding-right: 1rem;
 }
 
-.col-2 {
-    width: calc(100% /12 *2);
+.image{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 3px;
+    width: 100%;
+    color: var(--spotify_lightest);
+    background-color: #000000c7;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.card:hover .overlay{
+    display: flex;
+}
+.card:hover{
+    cursor: pointer;
 }
 
 .created_for h2,
@@ -262,6 +304,12 @@ nav svg {
 .popular h5{
     margin-bottom: 1.5rem;   
 }
+
+.popular img,
+.popular .overlay {
+    border-radius: 50%;
+}
+
 /* #endregion Wrapper */
 
 /* #region playerbar */

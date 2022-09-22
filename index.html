@@ -33,7 +33,7 @@
                                 d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
                                 fill="#ffffff" />
                         </svg>
-                        <span>Home</span>
+                        <a href="#">Home</a>
                     </div>
                     <div class="search">
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@
                                 d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
                                 fill="#ffffff" fill-rule="evenodd" />
                         </svg>
-                        <span>Cerca</span>
+                        <a href="#">Cerca</a>
                     </div>
                     <div class="library">
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -49,35 +49,38 @@
                                 d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
                                 fill="#ffffff" />
                         </svg>
-                        <span>La tua libreria</span>
+                        <a href="#">La tua libreria</a>
                     </div>
                 </nav>
                 <div class="playlist">
                     <h2>PLAYLIST</h2>
                     <div class="new_playlist">
-                        <i class="fa-solid fa-square-plus"></i>
-                        Crea Playlist
+                        <a href="#" class="add_playlist">
+                            <i class="fa-solid fa-square-plus"></i>Crea Playlist
+                        </a>
+
                     </div>
                     <ul>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
             </div>
             <div class="sidebar_bot">
                 <div class="install">
-                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Download icon</title>
-                        <path
-                            d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"
-                            fill="#ffffff" fill-rule="evenodd" />
-                    </svg>
-                    Installa App
+                    <a href="#"><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Download icon</title>
+                            <path
+                                d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"
+                                fill="#ffffff" fill-rule="evenodd" />
+                        </svg>
+                        Installa App</a>
+
                 </div>
                 <div class="account d_flex">
                     <div class="circle">
@@ -112,42 +115,72 @@
                             <div class="row">
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/metal_lifting.jpg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/metal_lifting.jpg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>Heavy Metal</h3>
                                         <h5>Subtitle</h5>
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/stranger.jpeg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/stranger.jpeg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                                         <h5>Kyle Dixon & Michael Stein</h5>
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/aquietplace.jpeg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/aquietplace.jpeg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>A Quiet Place</h3>
                                         <h5>Subtitle</h5>
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/split.jpeg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/split.jpeg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>Split</h3>
                                         <h5>Subtitle</h5>
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/cure.jpeg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/cure.jpeg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>A cure of wellness</h3>
                                         <h5>Subtitle</h5>
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/sinister.jpeg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/sinister.jpeg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>Sinister</h3>
                                         <h5>Subtitle</h5>
                                     </div>
@@ -163,13 +196,23 @@
                             <div class="row">
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/radar.jpeg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/radar.jpeg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>Release Radar</h3>
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/mixdaily.jpeg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/mixdaily.jpeg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>Daily Mix 1</h3>
                                     </div>
                                 </div>
@@ -183,13 +226,23 @@
                             <div class="row">
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/youg.jpeg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/youg.jpeg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>Lana del Rey</h3>
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="./assets/img/einaudi.jpeg" alt="">
+                                        <div class="image">
+                                            <img src="./assets/img/einaudi.jpeg" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-regular fa-circle-play"></i>
+                                            </div>
+                                        </div>
                                         <h3>Ludovico Einaudi</h3>
                                     </div>
                                 </div>
