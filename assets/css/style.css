@@ -250,6 +250,7 @@ nav svg {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .music_section section {
@@ -283,7 +284,7 @@ nav svg {
 }
 
 .col-2 {
-    width: calc(100% /12 *2);
+    width: calc(100% / 12 *2);
 }
 
 .card{
@@ -523,11 +524,28 @@ nav svg {
 /* #region Responsive Media Queries */
 
 @media screen and (max-width: 878px) {
-   
+    .headbar{
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+    .col-md-3{
+        width: calc(100% / 12 *3);
+    }
+    .music_section h3 {
+        font-size: 15px;
+    }
+    .row{
+        row-gap: 1rem;
+    }
+
+
 }
 
 @media screen and (max-width: 639px) {
-   
+    .col-sm-6{
+        width: calc(100% / 12 *6);
+    }
+
 }
 
 @media screen and (max-width: 552px) {
