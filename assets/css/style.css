@@ -619,7 +619,7 @@ nav svg {
 @media screen and (max-height: 780px) {
     .playlist ul {
         overflow: auto;
-        height: 110px;
+        height: calc(100vh - 450px);
     }
 }
 
