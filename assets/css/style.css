@@ -51,10 +51,6 @@ body {
     color: var(--spotify_light_extra);
     overflow: hidden;
     flex-shrink: 0;
-}
-
-.sidebar_top,
-.sidebar_bot {
     padding: 1rem;
 }
 
@@ -619,4 +615,12 @@ nav svg {
         gap: 0.5rem;
     }
 }
+
+@media screen and (max-height: 780px) {
+    .playlist ul {
+        overflow: auto;
+        height: 110px;
+    }
+}
+
 /* #endregion Responsive Media Queries */
