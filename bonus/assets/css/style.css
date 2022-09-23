@@ -533,6 +533,11 @@ nav svg {
     .col-md-3{
         width: calc(100% / 12 *3);
     }
+    .col-md-3 .cure,
+    .col-md-3 .sinister{
+        display: none;
+    }
+
     .music_section h3 {
         font-size: 15px;
     }
@@ -547,6 +552,12 @@ nav svg {
     .col-sm-6{
         width: calc(100% / 12 *6);
     }
+
+    .col-sm-6 .quiet_place,
+    .col-sm-6 .split {
+        display: none;
+    }
+    
     .audio .bar{
         width: 104px;
     }
