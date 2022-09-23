@@ -672,7 +672,7 @@ nav svg {
     }
 }
 
-/* @media screen and (max-height: 780px) {
+@media screen and (max-height: 780px) {
     .playlist ul {
         overflow: auto;
         height: calc(100vh - 450px);
@@ -683,6 +683,6 @@ nav svg {
     .headbar{
         margin-top: 0;
     }
-} */
+}
 
 /* #endregion Responsive Media Queries */
