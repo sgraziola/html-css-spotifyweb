@@ -27,7 +27,19 @@ img {
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
+.wrapper {
+    height: calc(100vh - 90px);
+}
+.sidebar a:hover,
+.headbar a:hover {
+    color: var(--spotify_lightest);
+}
+.container_lg {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 800;
+}
 /* #endregion Common */
 
 /* #region Utilities */
@@ -38,10 +50,8 @@ body {
 /* #endregion Utilities */
 
 /* #region Wrapper */
-.wrapper {
-    height: calc(100vh - 90px);
-}
 
+/* #region Sidebar */
 .sidebar {
     background-color: var(--spotify_darkest);
     width: 270px;
@@ -170,12 +180,8 @@ nav svg {
     height: 20px;
     margin-right: 0.5rem;
 }
-
-.sidebar a:hover,
-.headbar a:hover {
-    color: var(--spotify_lightest);
-}
-
+/* #endregion Sidebar */
+/* #region Banner */
 .banner {
     background-color: var(--spotify_dark_extra);
     padding: 1rem 2rem;
@@ -184,6 +190,7 @@ nav svg {
     width: calc(100% - 280px);
     top: 0;
     right: 10px;
+    z-index: 99;
 }
 
 .banner a {
@@ -198,13 +205,9 @@ nav svg {
 .banner a:hover{
     transform: scale(1.1);
 }
+/* #endregion Banner */
+/* #region inside_wrapper */
 
-.container_lg {
-    width: 100%;
-    height: 100%;
-    font-size: 13px;
-    font-weight: 800;
-}
 
 .inside_wrapper {
     overflow: auto;
@@ -328,6 +331,7 @@ nav svg {
 .popular .overlay {
     border-radius: 50%;
 }
+/* #endregion inside_wrapper */
 
 /* #endregion Wrapper */
 
