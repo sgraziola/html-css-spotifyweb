@@ -74,6 +74,10 @@ svg.spotify-logo--text {
     width: 130px;
 }
 
+.logo_small{
+    display: none;
+}
+
 nav div {
     padding: 0.3rem 0;
 }
@@ -517,19 +521,53 @@ nav svg {
 /* #endregion Debug */
 
 /* #region Responsive Media Queries */
-/* @media screen and (max-width: 1439px) {
-   
-} */
 
-@media screen and (max-width: 879px) {
+@media screen and (max-width: 878px) {
    
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
    
 }
 
-@media screen and (max-width: 553px) {
-   
+@media screen and (max-width: 552px) {
+    
+    .sidebar{
+        width: 50px;
+        align-items: center;
+    }
+    .spotify-logo--text,
+    .sidebar_top a,
+    .playlist,
+    .sidebar_bot span{
+        display: none;
+    }
+    .logo_small{
+        width: 28px;
+        display: inline-block;
+    }
+
+    .install {
+       border-bottom: none;
+    }
+    .home {
+        border-left: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .sidebar_top, .sidebar_bot {
+        padding: 0.5rem;
+    }
+    .logo, nav {
+        padding-bottom: 0.5rem;
+    }
+    .circle {
+        margin: auto;
+    }
+    .install img {
+        width: 15px;
+        vertical-align: unset;
+        margin-right: 0;
+    }
 }
 /* #endregion Responsive Media Queries */
