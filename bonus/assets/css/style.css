@@ -184,7 +184,7 @@ nav svg {
 /* #region Banner */
 .banner {
     background-color: var(--spotify_dark_extra);
-    padding: 1rem 2rem;
+    padding: 2.5rem 2rem;
     text-align: end;
     position: fixed;
     width: calc(100% - 280px);
@@ -200,11 +200,52 @@ nav svg {
     border: 1px solid var(--spotify_lightest);
     border-radius: 3rem;
     display: inline-block;
+    animation-name: moving;
+    animation-duration: 10s;
+    position: absolute;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-top: 0.5rem;
+}
+
+@keyframes moving {
+    0% {  
+        background-color: aqua;
+        right: 10px;
+        top: 0px;
+    }
+
+    25% {  
+        background-color: green;
+        right: 10px;
+        top: 15px;
+    }
+    
+    50% {  
+        background-color: red;
+        right: calc(100% - 280px);
+        top: 15px;
+    }
+    
+    75% {  
+        background-color: blue;
+        right: calc(100% - 280px);
+        top: 0px;
+    }
+
+    100% {  
+        background-color: black;
+        right: 10px;
+        top: 0px;
+    } 
 }
 
 .banner a:hover{
     transform: scale(1.1);
 }
+
+
 /* #endregion Banner */
 /* #region inside_wrapper */
 
@@ -557,7 +598,7 @@ nav svg {
     .col-sm-6 .split {
         display: none;
     }
-    
+
     .audio .bar{
         width: 104px;
     }
@@ -631,7 +672,7 @@ nav svg {
     }
 }
 
-@media screen and (max-height: 780px) {
+/* @media screen and (max-height: 780px) {
     .playlist ul {
         overflow: auto;
         height: calc(100vh - 450px);
@@ -642,6 +683,6 @@ nav svg {
     .headbar{
         margin-top: 0;
     }
-}
+} */
 
 /* #endregion Responsive Media Queries */
